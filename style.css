@@ -1,0 +1,136 @@
+* {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+
+@font-face {
+    font-family: roboto;
+    src: url(./fonts/Roboto-BoldItalic.ttf);
+}
+
+@font-face {
+    font-family: komikax;
+    src: url(./fonts/KOMIKAX_.ttf);
+}
+
+@font-face {
+    font-family: komikag;
+    src: url(./fonts/KOMIKAGL.ttf);
+}
+
+#bg {
+    background-image: url(./img/cloud.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+#main {
+    padding: 75px;
+}
+
+#search {
+    background-color: transparent;
+    /* padding-top: 100px; */
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 50px;
+    padding: 16px;
+}
+
+#inputname {
+    background-color: transparent;
+    width: 80%;
+    font-family: sans-serif;
+    font-size: 28px;
+    color: black;
+    outline: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    padding: 9px;
+    text-align: center;
+    /* border: none; */
+    /* height: 30px; */
+    /* margin-top: 100px; */
+}
+
+#btn {
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 10px;
+    color: black;
+    margin-left: 5px;
+    padding: 5px;
+    width: 23%;
+    font-size: 22px;
+    cursor: pointer;
+    /* height: 10%;  */
+}
+
+#btn:active {
+    color: wheat;
+    border: 2px solid black;
+}
+
+#update {
+    background-color: transparent;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    width: 60%;
+    padding: 25px;
+    margin-top: 30px;
+    /* line-height: 60px; */
+}
+
+#update>h1 {
+    font-size: 35px;
+    font-family: komikax;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+
+}
+
+#update>h3 {
+    font-size: 30px;
+    font-family: komikag;
+    color: rgb(24, 17, 17);
+}
+
+@media only screen and (max-width: 768px) {
+    #main {
+        padding: 5px;
+        padding-top: 70px;
+    }
+    
+    #search{
+        /* background-color: khaki; */
+        /* margin: 0px; */
+        width: 90%;
+    }
+  
+    #update {
+        width: 90%;
+        /* background-color: olive; */
+        margin-left: 5px;
+        margin-right: 5px;
+        padding: 5px;
+    }
+    #update>h1 {
+        font-size: 25px;
+    }
+    #update>h3 {
+        font-size: 22px;
+    }
+    #inputname {
+        width: 100%;
+        font-family: sans-serif;
+        font-size: 22px;
+    }
+
+    #btn {
+        width: 60%;
+        font-size: 17px;
+    }
+}
